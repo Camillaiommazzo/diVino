@@ -39,7 +39,7 @@
     <button type="submit" >Accedi </button><br><br>
 </form>
     <p>Non sei registrato?</p>
-    <a href="#"> Registrati</a>
+    <a href="Registrazione.jsp"> Registrati</a>
 </div>
 </main>
 
