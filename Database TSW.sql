@@ -27,13 +27,14 @@ primary key ( codice,nomeUtente)
 );
 
 create table carrello (
+idC int auto_increment,
 dataC date not null,
 quantita int not null,
 codiceU int references utente(codice),
 nomeU varchar(20) references utente(nomeUtente),
 id int references articolocarrello(id),
 totale float,
-primary key (codiceU, nomeU, id,quantita,dataC)                                  
+primary key (idC,codiceU, nomeU, id,quantita,dataC)                                  
 );
 
 
@@ -46,5 +47,5 @@ nomeUtente varchar(25) references carrello(nomeU),
 codProdotto int references carrello(codP)
 );
 
-
+SET GLOBAL max_connections = 500;
 
